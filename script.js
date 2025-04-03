@@ -68,7 +68,7 @@ async function test() {
     resultView.classList.add('success');
   } else {
     const hint = pin < number ? 'Try a higher number ⬆️' : 'Try a lower number ⬇️';
-    resultView.innerHTML = ❌ Wrong guess. ${hint};
+    resultView.innerHTML = `❌ Wrong guess. ${hint}`;
   }
   resultView.classList.remove('hidden');
 }
